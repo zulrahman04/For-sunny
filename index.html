@@ -1,13 +1,13 @@
 <!-- <link rel="stylesheet" href="./css.scss"> -->
- <style>
-    * {
+<style>
+  * {
   margin: 0;
   padding: 0;
-}
-h1 {
+  }
+  h1 {
   font-family: Solitreo;
-}
-body {
+  }
+  body {
   height: 100vh;
   width: 100vw;
   background: #fee2e9;
@@ -16,18 +16,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container {
+  }
+  .container {
   position: relative;
   top: 0vmin;
-}
-.envelope {
+  }
+  .envelope {
   position: relative;
   background: #f980a1;
   height: 30vmin;
   width: 47.9vmin;
-}
-.card {
+  }
+  .card {
   position: absolute;
   background: white;
   height: 25vmin;
@@ -39,13 +39,13 @@ body {
   left: 2.5vmin;
   top: 0vmin;
   animation: slide-rev 0.2s ease-out;
-}
-.message {
+  }
+  .message {
   position: absolute;
   top: 2vmin;
   left: 1vmin;
-}
-.cover {
+  }
+  .cover {
   position: absolute;
   height: 0;
   width: 0;
@@ -54,8 +54,8 @@ body {
   border-right: 24vmin solid transparent;
   top: 15vmin;
   z-index: 3;
-}
-.cover::after {
+  }
+  .cover::after {
   /*left triangle*/
   position: absolute;
   content: "";
@@ -64,8 +64,8 @@ body {
   border-top: 15vmin solid transparent;
   top: -15vmin;
   left: -24vmin;
-}
-.cover::before {
+  }
+  .cover::before {
   position: absolute;
   content: "";
   border-right: 24.5vmin solid #fcbbcc;
@@ -73,8 +73,8 @@ body {
   border-top: 15vmin solid transparent;
   top: -15vmin;
   left: -0.5vmin;
-}
-.lid {
+  }
+  .lid {
   position: absolute;
   height: 0;
   width: 0;
@@ -84,17 +84,17 @@ body {
   top: 0;
   transform-origin: top;
   animation: open-rev 2s;
-}
-.container:hover .lid {
+  }
+  .container:hover .lid {
   animation: open 0.5s;
   animation-fill-mode: forwards;
-}
-.container:hover .card {
+  }
+  .container:hover .card {
   animation: slide 0.2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
-}
-.shadow {
+  }
+  .shadow {
   position: relative;
   top: 3vmin;
   border-radius: 50%;
@@ -102,15 +102,15 @@ body {
   height: 2vmin;
   width: 48vmin;
   background: #e8c5d0;
-}
-.heart {
+  }
+  .heart {
   position: relative;
   width: 5vmin;
   height: 4vmin;
   top: 2vmin;
   left: -1vmin;
-}
-.heart:before, .heart:after {
+  }
+  .heart:before, .heart:after {
   position: absolute;
   content: "";
   left: 2.5vmin;
@@ -121,46 +121,51 @@ body {
   border-radius: 2.5vmin 2.5vmin 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
-}
-.heart:after {
+  }
+  .heart:after {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
-}
-@keyframes open {
+  }
+  @keyframes open {
   100% {
-    transform: rotatex(180deg);
+      transform: rotatex(180deg);
   }
-}
-@keyframes slide {
+  }
+  @keyframes slide {
   100% {
-    transform: translatey(-15vmin);
-    z-index: 2;
+      transform: translatey(-15vmin);
+      z-index: 2;
   }
-}
-@keyframes open-rev {
+  }
+  @keyframes open-rev {
   from {
-    transform: rotatex(-180deg);
+      transform: rotatex(-180deg);
   }
-}
-@keyframes slide-rev {
+  }
+  @keyframes slide-rev {
   from {
-    transform: translatey(-15vmin);
+      transform: translatey(-15vmin);
   }
-}
+  }
 
- </style>
-<link href='https://fonts.googleapis.com/css?family=Solitreo' rel='stylesheet'>
+</style>
+<head>
+  
+  <title>PIYEEUU</title>
+  <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fb/Kemra2.jpg">
+  <link href='https://fonts.googleapis.com/css?family=Solitreo' rel='stylesheet'>
+</head>
 
 <div class="container">
-  <div class="envelope"></div>
-  <div class="card">
-    <b><h2 class="message">Alifia Nabila, puasa bukan hanya tentang menahan lapar dan dahaga, tapi juga tentang melatih hati untuk sabar dan ikhlas. Di tengah panasnya siang dan lelahnya tubuh, ingatlah bahwa setiap detik yang kau jalani adalah pahala yang tak terhingga. Jangan biarkan rasa lelah mematahkan semangatmu, karena perjuangan ini akan membawa keberkahan besar.</h2><br><br><br><br><br><br><br><br><br><br><br>
-    <h1>Semangatss</h1>
-    </b>
-    <div class="heart"></div>
-  </div>
-  <div class="cover"></div>
-  <div class="lid"></div>
-  <div class="shadow"></div>
+<div class="envelope"></div>
+<div class="card">
+  <b><h2 class="message">Alifia Nabila, puasa bukan hanya tentang menahan lapar dan dahaga, tapi juga tentang melatih hati untuk sabar dan ikhlas. Di tengah panasnya siang dan lelahnya tubuh, ingatlah bahwa setiap detik yang kau jalani adalah pahala yang tak terhingga. Jangan biarkan rasa lelah mematahkan semangatmu, karena perjuangan ini akan membawa keberkahan besar.</h2><br><br><br><br><br><br><br><br><br><br><br>
+  <h1>Semangatss</h1>
+  </b>
+  <div class="heart"></div>
+</div>
+<div class="cover"></div>
+<div class="lid"></div>
+<div class="shadow"></div>
 </div>
